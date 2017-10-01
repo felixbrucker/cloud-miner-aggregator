@@ -1,0 +1,11 @@
+{
+  "name": "cloud-miner-aggregator",
+  "version": "1.0.0",
+  "dependencies": {
+    "async": "^2.5.0",
+    "axios": "^0.16.2",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.1",
+    "nodemailer": "^4.1.1"
+  }
+}
