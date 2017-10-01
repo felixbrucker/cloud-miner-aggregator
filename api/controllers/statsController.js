@@ -58,7 +58,7 @@ async function getAllMinerStats() {
 }
 
 function updateOffline(device) {
-  if (!(offlineCounter[device.id] >= 0)) {
+  if (offlineCounter[device.id] === undefined) {
     offlineCounter[device.id] = 0;
   }
 
@@ -83,7 +83,7 @@ function updateOffline(device) {
 }
 
 function updateNoMinerRunning(device) {
-  if (!(noMinerRunning[device.id] >= 0)) {
+  if (noMinerRunning[device.id] === undefined) {
     noMinerRunning[device.id] = 0;
   }
 

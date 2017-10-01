@@ -11,6 +11,7 @@ module.exports = async (device) => {
   } catch (err) { console.error(err); }
 
   return {
+    id: device.id,
     name: device.name,
     entries: minerData ? minerData.data.entries : null,
     hostname: device.hostname,
